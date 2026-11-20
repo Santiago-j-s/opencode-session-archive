@@ -2,7 +2,7 @@
 
 A small OpenCode Desktop plugin that adds **Archive current session** to the command palette and **⌘⇧M** as its default Mac shortcut. It’s a reference implementation for making the workflow native to Desktop.
 
-Press the shortcut from an idle session, including while the composer has focus. A toast gives you five seconds to click **Undo**. Until then, the session stays open and no archive request is sent. If the timer expires, the plugin rechecks the original session, archives it if it’s still eligible, and closes its tab. Switching tabs doesn’t change the target.
+Press the shortcut from an idle session, including while the composer has focus. A toast counts down from five seconds and lets you click **Undo**. Until the countdown ends, the session stays open and no archive request is sent. If the timer expires, the plugin rechecks the original session, archives it if it’s still eligible, and closes its tab. Switching tabs doesn’t change the target.
 
 ## Try it locally
 
@@ -32,4 +32,4 @@ bun run typecheck
 bun run build
 ```
 
-The build regenerates `gui-experimental.cjs` from `src/gui.ts`.
+The build regenerates `gui-experimental.cjs` from `src/gui.tsx`.

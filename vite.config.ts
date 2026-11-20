@@ -2,5 +2,5 @@ import { defineConfig } from "vite";
 import { gui } from "@opencode/plugin/gui/vite";
 
 export default defineConfig({
-  plugins: [gui({ entry: "src/gui.ts", outFile: "gui-experimental.cjs" })],
+  plugins: [gui({ entry: "src/gui.tsx", outFile: "gui-experimental.cjs" })],
 });
